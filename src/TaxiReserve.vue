@@ -1,9 +1,9 @@
 <template>
   <div id="taxiReserveWindow">
-    <h2 class="text-center mt-5 mb-4">タクシー配車予約</h2>
+    <h2 class="text-center mt-5 mb-4">コミューター配車予約</h2>
     <form class="row row-cols-1 g-3" novalidate>
       <div class="col input-group">
-        <span id="basic-addon1" class="input-group-text">名前</span>
+        <span id="basic-addon1" class="input-group-text">ニックネーム</span>
         <input v-model="taxiUserName" type="text" class="form-control" />
       </div>
       <div class="col input-group">
@@ -127,10 +127,11 @@ export default {
         { number: 6 },
       ], // 1->2, 1->3, 1->4, 2->3, 2->4, 3->4
       places: [
-        { id: '1', name: '観光会館' },
-        { id: '2', name: '○○駅' },
-        { id: '3', name: '○○温泉' },
-        { id: '4', name: '○○カフェ' },
+        { id: '1', name: '長野県観光会館' },
+        { id: '2', name: '扇沢駅' },
+        { id: '3', name: '奥山田温泉' },
+        { id: '4', name: '農民カフェ' },
+        { id: '5', name: '青木湖畔前バス停' },
       ],
     }
   },
